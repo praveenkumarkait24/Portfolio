@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen's Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <!-- Importing new robust fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Syncopate:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Versioning the css to force refresh -->
+    <link rel="stylesheet" href="style.css?v=2.1">
+</head>
+
+<body>
+    <!-- BACKGROUND LAYERS -->
+    <div class="fixed-bg"></div>
+    <canvas id="neural-canvas"></canvas>
+    <div class="vignette-overlay"></div>
+
+    <nav class="glass-nav">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo" class="nav-logo-img">
+            <span class="bracket"></span> PRAVEEN <span class="bracket"></span>
+        </div>
+        <div class="nav-items">
+            <a href="#home" class="active">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="glitch-wrapper">
+                    <h1 class="glitch" data-text="PRAVEEN KUMAR">PRAVEEN KUMAR</h1>
+                </div>
+                <div class="subtitle">
+                    <span class="typing-text">FULL STACK DEVELOPER | AI ENGINEER</span>
+                </div>
+                <div class="cta-group">
+                    <a href="resume.pdf" download="Praveen_Kumar_Resume.pdf" class="cyber-btn primary">
+                        <i class="fas fa-file-pdf"></i> RESUME
+                        <span class="glitch-effect"></span>
+                    </a>
+                    <a href="#contact" class="cyber-btn secondary">
+                        CONTACT
+                    </a>
+                </div>
+
+                <div class="social-hud">
+                    <a href="https://github.com/praveenkumarkait24" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/praveenkumarka/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://leetcode.com/u/praveenkumarka_it24/" target="_blank"><i
+                            class="fas fa-code"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="panel-section">
+            <div class="section-title">
+                <h2>SKILLS</h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <div class="skills-globe-container">
+                <div id="tag-cloud"></div>
+            </div>
+        </section>
+
+        <section id="projects" class="panel-section">
+            <div class="section-title">
+                <h2>PROJECTS</h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <div class="projects-vertical">
+                <article class="cyber-project-card">
+                    <div class="project-visual">
+                        <img src="assets/hostel_nxt.png" alt="HostelNXT">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>HostelNXT</h3>
+                        </div>
+                        <p>Advanced management protocol for student housing. Streamlines administrative logic via
+                            automated workflows.</p>
+                        <div class="tech-stack">
+                            <span>REACT</span><span>NODE</span><span>MONGO</span>
+                        </div>
+                        <a href="https://github.com/praveenkumarkait24/HostelNXT" class="cyber-link">ACCESS REPO >></a>
+                    </div>
+                </article>
+
+                <article class="cyber-project-card right-aligned">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>BlockCert AI</h3>
+                        </div>
+                        <p>Decentralized verification engine utilizing Artificial Intelligence to authenticate
+                            credentials on the blockchain.</p>
+                        <div class="tech-stack">
+                            <span>SOLIDITY</span><span>PYTHON</span><span>WEB3</span>
+                        </div>
+                        <a href="https://github.com/praveenkumarkait24/Blockcert-AI" class="cyber-link">ACCESS REPO
+                            >></a>
+                    </div>
+                    <div class="project-visual">
+                        <img src="assets/blockcert_ai.png" alt="BlockCert">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="education" class="panel-section">
+            <div class="section-title reveal">
+                <h2>EDUCATION</h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <div class="education-grid">
+                <div class="edu-card reveal">
+                    <div class="edu-icon"><i class="fas fa-university"></i></div>
+                    <div class="edu-content">
+                        <span class="edu-year">2024 - 2028</span>
+                        <h3>B.Tech in Information Technology</h3>
+                        <h4>Bannari Amman Institute of Technology</h4>
+                        <p>Specializing in AI, Blockchain, and Full-Stack Development strategies.</p>
+                    </div>
+                </div>
+                <div class="edu-card reveal">
+                    <div class="edu-icon"><i class="fas fa-school"></i></div>
+                    <div class="edu-content">
+                        <span class="edu-year">GRADUATED 2024</span>
+                        <h3>Higher Secondary Education</h3>
+                        <h4>KG Matriculation and Higher Secondary School</h4>
+                        <p>Core foundation in Computer Science and Mathematics with 90% aggregate.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="panel-section">
+            <div class="section-title reveal">
+                <h2>CONTACT</h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <div class="contact-hub">
+                <div class="contact-split-layout reveal">
+
+                    <!-- Left Column: Info & Socials -->
+                    <div class="contact-info-card">
+                        <div class="contact-info-item" onclick="location.href='mailto:anandanp391@gmail.com'"
+                            style="cursor: pointer;">
+                            <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>anandanp391@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item" onclick="location.href='tel:+919384699463'"
+                            style="cursor: pointer;">
+                            <div class="icon-box"><i class="fas fa-mobile-alt"></i></div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 9384699463</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Base Location</h4>
+                                <p>India</p>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+
+                        <div class="social-grid">
+                            <a href="https://www.linkedin.com/in/praveenkumarka/" target="_blank" class="social-btn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/praveenkumarkait24" target="_blank" class="social-btn">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://leetcode.com/u/praveenkumarka_it24/" target="_blank" class="social-btn">
+                                <i class="fas fa-code"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: The Form -->
+                    <div class="form-box-v2">
+                        <h3><i class="fas fa-paper-plane"></i> REACH</h3>
+                        <br>
+                        <br>
+                        <form id="contact-form" class="cyber-form-v2">
+                            <div class="form-row">
+                                <div class="input-wrap">
+                                    <input type="text" name="name" required placeholder=" ">
+                                    <span class="label">NAME</span>
+                                    <div class="glow-bar"></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="input-wrap">
+                                    <input type="email" name="email" required placeholder=" ">
+                                    <span class="label">MAIL ID</span>
+                                    <div class="glow-bar"></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="input-wrap">
+                                    <textarea name="message" required placeholder=" " rows="4"></textarea>
+                                    <span class="label">MESSAGE</span>
+                                    <div class="glow-bar"></div>
+                                </div>
+                            </div>
+                            <button type="submit" id="send-btn" class="send-btn-v2">
+                                SEND <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                        <div id="form-status"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 PRAVEEN KUMAR</p>
+    </footer>
+
+    <!-- Custom Modal for Success Message -->
+    <div id="success-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h3>SUCCESS</h3>
+            </div>
+            <p>Your message has been successfully submitted!</p>
+            <button id="close-modal" class="cyber-btn primary">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js?v=2.1"></script>
+</body>
+
+</html>
